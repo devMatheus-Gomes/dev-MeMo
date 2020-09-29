@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  height: 100%;
+}
+
+/* Var used */
+:root{
+  --color-main:#44A1C2;
+  --color-box-form:#FBFBFB;
+  --color-box-perfil:#F2F2F2;
+  --font-raleway:'Raleway', sans-serif;
+}
+
+/* Exemplo de como usar Var */
+body{
+  background-color: var(--color-main);
+}
+
