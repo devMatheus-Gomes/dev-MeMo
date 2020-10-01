@@ -8,6 +8,9 @@ html,body{
   height: 100%;
 }
 
+.clear{
+  clear: both;
+}
 
 /* Var used */
 :root{
@@ -25,7 +28,6 @@ body{
 .nav-bar{
   background-color: var(--color-main);
   width: 100%;
-  position: fixed;
 }
 
 .bear{
@@ -33,29 +35,34 @@ body{
   margin-left: 20px;
 }
 
-#btn-sign{
-  /* justify-content: right; */
-  margin-left: 140PX;
+
+ #btn-sign{
+  /* justify-content: right; 
+  margin-left: 140PX; */
+  float: right;
+  margin: 6px 10px 0 0;
   background-color: #ffffff;
   border-color: #ffffff;
   color: #44A1C2;
   font-family: 'Raleway';
   border-radius: 10px;
-
-}
+} 
 
 .note{
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.text-int{
+  padding: 0.3rem;
+  text-align: center;
 }
 
 .text-int h2{
   color: #44A1C2;
   font-family: 'Raleway';
-  text-align: center;
   font-size: 20px;
   letter-spacing: 5px;
-
 }
 
 .text-int p{
@@ -69,18 +76,22 @@ body{
 
 .text-int #btn-con{
   margin-top: 8px;
-  margin-left: 110px;
+  /* margin-left: 110px; */
   background-color: #44A1C2;
   border-color:#44A1C2;
   color: #ffffff;
   font-family: 'Raleway';
   border-radius: 10px;
-
 }
 
+/* -------------------- */
 
 .bear-dev{
-  width: 400px;
+  width:90%;
+}
+
+.bear-dev img{
+  width: 120%;
 }
 
 .text-this h2{
@@ -89,6 +100,7 @@ body{
   text-align: center;
   font-size: 20px;
   letter-spacing: 5px;
+  
 }
 
 .text-this p{
@@ -97,14 +109,24 @@ body{
   text-align: center;
   letter-spacing: 0.5px;
   margin-top: 30px;
-
 }
 
+/* --------------- */
+
 .team-scrum{
+  text-align: center;
+}
+
+.team-scrum img{
+  width: 230px;
+  margin-top: 2rem;
+}
+
+/* .team-scrum{
   width: 250px;
   margin-top: 30px;
   margin-left: 30px;
-}
+} */
 
 .text-team h2{
   margin-top: 30px;
@@ -121,5 +143,85 @@ body{
   text-align: center;
   letter-spacing: 0.5px;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 1050px){
+
+  .note{
+    width: 50%;
+    float: right;
+    margin-top:50px;
+  }
+  
+  .text-int{
+    width: 42%;
+    float: left;  
+    padding: 20px;
+    margin: 150px auto auto 50px;
+  }
+  
+  .text-int p{
+    text-align: left;
+  }
+  
+  .text-int #btn-con{
+    float:right;
+  }
+  /* ------------------- */
+
+  .bear-dev{
+    width:50%;
+    float:left;
+  }
+  
+  .bear-dev img{
+    width: 120%;
+  }
+
+  .text-this{
+    float: left;
+    width: 45%;
+    margin-top: 130px;
+  }
+  
+  .text-this h2{
+    color: #44A1C2;
+    font-family: 'Raleway';
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    
+  }
+  
+  .text-this p{
+    text-align: left;
+  }
+
+  /* ----------- */
+
+  .team-scrum{
+    width: 50%;
+    float: right;
+  }
+
+  .team-scrum img{
+    width: 50%;
+    height: 50vh;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+
+  .text-team{
+    width: 42%;
+    float: left;  
+    padding: 20px;
+    margin: 50px auto auto 50px;
+  }
+
+  .text-team p{
+    text-align: left;
+    margin-top: 30px;
+  }
+  
 
 }
